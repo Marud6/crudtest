@@ -67,27 +67,30 @@ do{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div>
         <h1>New blok</h1>
         <form method="post">
-            <div>
-                <label for="">name</label>
-                <input type="text" name="name" value="<?php echo $name;?>">
-            </div>
+        <div class="input-group mb-3">
+  <span class="input-group-text">New blok</span>
+  <input type="text" class="form-control" name="name" value="<?php echo $name;?>" placeholder=" Name">
+  <input type="text" class="form-control"  name="content" value="<?php echo $content;?>" placeholder="content">
+  <button class="btn btn-success" type="submit" >Submit</button>
 
-            <div>
-                <label for="">content</label>
-                <input type="text" name="content" value="<?php echo $content;?>">
-            </div>
+</div>
 
-            <div>
-                <button type="submit" >Submit</button>
-            </div>
-            <div>
-            <a class="canc" href="index.php">cancel</a>
-            </div>
+
+
+
+
+
+           
+            <a class="btn btn-danger" href="index.php">cancel</a>
         </form>
     </div>
     
