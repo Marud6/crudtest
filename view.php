@@ -86,11 +86,6 @@ $content="";
     
     ?>
     <a class="canc" href="index.php">cancel</a>
-    <?php
-    $ip_address = gethostbyname("www.google.com");  
-    echo "IP Address of Google is - ".$ip_address;  
-
-?>
     
 </body>
 </html>
