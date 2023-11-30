@@ -1,0 +1,49 @@
+*{
+    background-color: #F7CAC9;
+}
+h2{
+    color: black;
+    font-size: 40px;
+    
+    
+    
+}
+
+
+  body{
+
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    border-radius: 5px;
+
+    width: 100%;}
+    td{
+        
+        color: black;
+
+        }
+
+
+    
+.but{
+
+color: black;
+text-decoration: none;
+background-color: #cfa09e;
+border: 1px solid;
+padding: auto;
+} 
+table, th, td {
+  padding: 5px 1px;
+  border: 1px solid;
+}
+th{
+  font-weight: bold;
+
+}
+.canc{
+text-decoration: none;
+padding: auto;
+}
