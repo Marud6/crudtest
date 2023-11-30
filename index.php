@@ -26,7 +26,7 @@
             <?php 
   $dbhost = "localhost";
   $dbuser = "root";
-  $dbpass = "";;
+  $dbpass = "";
   $dbname=("bloky");
    $mysql= new mysqli($dbhost,$dbuser,$dbpass, $dbname);
    if($mysql->connect_error) {
