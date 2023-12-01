@@ -1,7 +1,7 @@
 <?php 
 echo"my website";
 
- $dbhost = "https://mysql.houkal.cz";
+ $dbhost = "mysql.houkal.cz";
  $dbuser = "mojedb-houkal";
  $dbpass = "Marekdb2007";
  $dbname=("mojedb-houkal");
