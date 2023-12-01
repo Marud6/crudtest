@@ -41,7 +41,7 @@ $content="";
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Document</title>
+    <title>view</title>
 </head>
 <body>
    
@@ -52,51 +52,42 @@ $content="";
 
 
     <?php
-    session_start();
+    if($_SERVER["REQUEST_METHOD"]=="GET"){
+        $id=$_GET["id"];
+    $sql="SELECT * FROM bloks WHERE id=$id";
+    $res= $mysql->query($sql);
+    $row= $res->fetch_assoc();
+    $name=$row["name"];
+    $content=$row["content"];
+    $create=$row["created_at"];
    
-
-
-    if(isset($_POST['next'])){
-        $_SESSION['number']++;   
-        $id=$_SESSION['number'] ;
-     }
-
-     if(isset($_POST['back'])){
-        if($_SESSION['number']==1) $_SESSION['number']++;   
-        $_SESSION['number']--;   
-        $id=$_SESSION['number'] ;
-     }
-
-
-
-
-    
-     $sql="SELECT * FROM bloks";
-   $res= $mysql->query($sql);
-
-
-
-
-
-    while($row =$res->fetch_assoc()){
-        echo"
-        <div class='row' class='container-fluid'>
-        <h1>$row[name]</h1>
-        <p1>$row[content]</p1>
-</div>
-
-        
-    ";
     
     }
 
+
+    
+
+    
     
     
     ?>
+      <form method="post">
     <div  class='container-fluid'>
-    <a class="btn btn-danger" href="index.php">Back</a>
+        
+   
+    
 
+</form>
+
+<div class="container mt-3">
+  <h1><?php echo($name)?></h1>
+  <p>Autor:</p>
+  <blockquote class="blockquote">
+    <p><?php echo($content)?></p>
+    <footer class="blockquote-footer"><?php echo($create)?></footer>
+  </blockquote>
 </div>
+<a class="btn btn-danger" href="index.php">Cancel</a>
     
 </body>
 </html>

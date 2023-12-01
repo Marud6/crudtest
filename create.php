@@ -31,6 +31,7 @@ echo("no")    ;
 
 do{ 
     if(empty($content)||empty($name)){
+        
         break;
 
 
@@ -77,13 +78,13 @@ do{
         <h1>New blok</h1>
         <form method="post">
         <div class="input-group mb-3">
-  <span class="input-group-text">New blok</span>
   <input type="text" class="form-control" name="name" value="<?php echo $name;?>" placeholder=" Name">
-  <input type="text" class="form-control"  name="content" value="<?php echo $content;?>" placeholder="content">
+  
   <button class="btn btn-success" type="submit" >Submit</button>
 
 </div>
-
+<label for="comment">Content:</label>
+<textarea class="form-control" rows="5" id="comment" name="content" value="<?php echo $content;?>" placeholder=" Your content..."></textarea>
 
 
 

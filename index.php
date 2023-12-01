@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,6 @@
 <body class="container-fluid">
     <div>
         <h2>Blocks</h2>
-        <a class="btn btn-primary" href="view.php" role="button">view blocks</a>
         <a class="btn btn-info" href="create.php" role="button">New+</a>
     </div>
     <table class="table table-striped">
@@ -49,6 +48,7 @@
     <td>
         <a class='btn btn-success' href='edit.php?id=$row[id]'>edit</a>
         <a class='btn btn-danger' href='delete.php?id=$row[id]'>delete</a>
+        <a class='btn btn-primary' href='view.php?id=$row[id]'>view</a>
     </td>
     
     </tr>";

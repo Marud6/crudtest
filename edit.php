@@ -68,7 +68,7 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,18 +78,18 @@ else{
 </head>
 <body>
 
-    <div>
-        <form method="post">
-            <input type="hidden" name="id" value="<?echo $id  ?>">
-            <h1>Edit blok</h1>
+</div>
+<div>
+        <h1>New blok</h1>
         <form method="post">
         <div class="input-group mb-3">
-  <span class="input-group-text">New blok</span>
   <input type="text" class="form-control" name="name" value="<?php echo $name;?>" placeholder=" Name">
-  <input type="text" class="form-control"  name="content" value="<?php echo $content;?>" placeholder="content">
+  
   <button class="btn btn-success" type="submit" >Submit</button>
 
 </div>
+<label for="comment">Content:</label>
+<textarea class="form-control" rows="5" id="comment" name="content" ><?php echo $content;?></textarea>   
 
 
 
