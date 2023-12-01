@@ -27,7 +27,7 @@
         </thead>
         <tbody>
             <?php 
-  $dbhost = "https://mysql.houkal.cz";
+  $dbhost = "mojedb-houkal";
   $dbuser = "mojedb-houkal";
   $dbpass = "Marekdb2007";
   $dbname=("bloky");
