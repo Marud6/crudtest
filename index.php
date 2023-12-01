@@ -30,7 +30,7 @@
   $dbhost = "mojedb-houkal";
   $dbuser = "mojedb-houkal";
   $dbpass = "Marekdb2007";
-  $dbname=("bloky");
+  $dbname=("mojedb-houkal");
    $mysql= new mysqli($dbhost,$dbuser,$dbpass, $dbname);
    if($mysql->connect_error) {
        echo 'connection failed';
