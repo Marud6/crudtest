@@ -18,14 +18,11 @@ $name="";
 $content="";
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
-try{
+
     $content=htmlspecialchars($_POST["content"]);
     $name=htmlspecialchars($_POST["name"]);
 
-}
-catch (Error){
-echo("no")    ;
-}
+
 
 
 
