@@ -80,7 +80,6 @@ do{
         <div class="input-group mb-3">
   <input type="text" class="form-control" name="name" value="<?php echo $name;?>" placeholder=" Name">
   
-  <button class="btn btn-success" type="submit" >Submit</button>
 
 </div>
 <label for="comment">Content:</label>
@@ -92,6 +91,8 @@ do{
 
            
             <a class="btn btn-danger" href="index.php">cancel</a>
+            <button class="btn btn-success" type="submit" >Submit</button>
+
         </form>
     </div>
     
