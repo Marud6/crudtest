@@ -28,8 +28,8 @@
         <tbody>
             <?php 
   $dbhost = "localhost";
-  $dbuser = "root";
-  $dbpass = "";
+  $dbuser = "mojedb-houkal";
+  $dbpass = "Marekdb2007";
   $dbname=("bloky");
    $mysql= new mysqli($dbhost,$dbuser,$dbpass, $dbname);
    if($mysql->connect_error) {
