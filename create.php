@@ -1,4 +1,6 @@
 <?php
+            include("config.php");
+
    $dbhost = $_SESSION["host"];
    $dbuser = $_SESSION["usr"];
    $dbpass = $_SESSION["pas"];

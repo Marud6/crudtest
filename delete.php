@@ -1,4 +1,6 @@
 <?php
+            include("config.php");
+
 $id= $_GET["id"];
 $dbhost = $_SESSION["host"];
 $dbuser = $_SESSION["usr"];
