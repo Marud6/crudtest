@@ -33,10 +33,8 @@ else{
     $id=$_GET["id"];
     $name=$_POST["name"];
     $content=$_POST["content"];
-    do{
         if(empty($content)||empty($name)){
             echo("bad");
-            break;   
        }
         $sql="UPDATE bloks " .
              "SET name = '$name', content = '$content'" .
@@ -49,7 +47,7 @@ else{
         header('location: index.php'); 
         exit;
 
-    }while(false);
+    
 
 }
 
