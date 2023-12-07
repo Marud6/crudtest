@@ -28,10 +28,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 
 
-do{ 
     if(empty($content)||empty($name)){
         
-        break;
 
 
     }
@@ -43,14 +41,12 @@ do{
         $res= $mysql->query($sql);
         
         header('location: index.php');  
-       exit;
 
     
 
         
 
     
-}while(false);
 
 
 
