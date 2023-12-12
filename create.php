@@ -78,8 +78,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         <form method="post">
         <div class="input-group mb-3">
   <input type="text" class="form-control" name="name" value="<?php echo $name;?>" placeholder=" Name">
-  
-
 </div>
 <label for="comment">Content:</label>
 <textarea class="form-control" rows="5" id="comment" name="content" value="<?php echo $content;?>" placeholder=" Your content..."></textarea>
