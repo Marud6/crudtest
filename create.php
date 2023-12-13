@@ -64,10 +64,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 <?php
 include"./compheader.php";
 echo createHeader();
-
-
-
-
 ?>
 <body>
     <div>
@@ -92,3 +88,7 @@ echo createHeader();
     
 </body>
 </html>
+<?php
+ $ipaddress = getenv("REMOTE_ADDR") ;
+ Echo "Your IP Address is " . $ipaddress;
+?>

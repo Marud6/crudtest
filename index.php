@@ -4,10 +4,7 @@ include"./compheader.php";
 echo createHeader();
 ?>
 <body class="container-fluid">
-<?php
- $ipaddress = getenv("REMOTE_ADDR") ;
- Echo "Your IP Address is " . $ipaddress;
-?>
+
     <div>
         <h2>Blocks</h2>
         <a class="btn btn-info" href="create.php" role="button">New+</a>
