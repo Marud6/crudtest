@@ -35,8 +35,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 
     }
-    $sql="INSERT INTO bloks (name, content)". 
-        "VALUES ('$name','$content')";
+    $ipaddress = getenv("REMOTE_ADDR") ;
+
+    $sql="INSERT INTO bloks (name, content,autor)". 
+        "VALUES ('$name','$content','$ipaddress')";
 
        
        
@@ -89,6 +91,5 @@ echo createHeader();
 </body>
 </html>
 <?php
- $ipaddress = getenv("REMOTE_ADDR") ;
- Echo "Your IP Address is " . $ipaddress;
+ 
 ?>
