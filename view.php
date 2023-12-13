@@ -74,7 +74,7 @@ echo createHeader();
     
 
 </form>
-
+<?php echo("aaa"+$autor)?>
 <div class="container mt-3">
   <h1><?php echo($name)?></h1>
   <p>Autor:<?php echo($autor)?></p>
