@@ -80,7 +80,7 @@ echo createHeader();
 
 <div class="container mt-3">
   <h1><?php echo($name)?></h1>
-  <p>Autorr:<?php echo($autor)?></p>
+  <p>Autor:<?php echo($autor)?></p>
   <blockquote class="blockquote">
     <p><?php echo($content)?></p>
     <footer class="blockquote-footer"><?php echo($create)?></footer>
