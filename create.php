@@ -62,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 <!DOCTYPE html>
 <?php
-include".compheader.php";
+include"./compheader.php";
 echo createHeader();
 
 
