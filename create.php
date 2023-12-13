@@ -61,17 +61,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+<?php
+include".copheader.php";
+echo createHeader();
+
+
+
+
+?>
 <body>
     <div>
         <h1>New blok</h1>
