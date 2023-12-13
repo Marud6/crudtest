@@ -47,6 +47,7 @@ echo createHeader();
 
 
     <?php
+    echo("aaa");
     if($_SERVER["REQUEST_METHOD"]=="GET"){
         $id=$_GET["id"];
     $sql="SELECT * FROM bloks WHERE id=$id";
