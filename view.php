@@ -84,7 +84,7 @@ echo createHeader();
   <blockquote class="blockquote">
     <p><?php echo($content)?></p>
     <footer class="blockquote-footer"><?php echo($create)?></footer>
-    <p><?php echo($time)?></p>
+    <p>Time:<?php echo($time)?></p>
   </blockquote>
 
 </div>
