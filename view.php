@@ -57,8 +57,7 @@ echo createHeader();
     $content=$row["content"];
     $create=$row["created_at"];
     $autor=$row["autor"];
-    echo($autor);
-    echo("aaa");
+  
 
     
     }
