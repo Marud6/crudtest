@@ -14,5 +14,7 @@ echo createHeader();
 
 
 ">KOUKNI SE Z OKNA</h1>
+<a class="btn btn-danger" href="index.php">Cancel</a>
+
 </body>
 </html>
