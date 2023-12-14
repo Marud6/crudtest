@@ -36,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
     }
     $ipaddress = getenv("REMOTE_ADDR") ;
-    $time=$_SERVER['REQUEST_TIME'] ;
+    $time=date("Y/m/d");
     $sql="INSERT INTO bloks (name, content,autor,time)". 
         "VALUES ('$name','$content','$ipaddress','$time')";
 
