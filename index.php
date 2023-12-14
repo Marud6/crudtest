@@ -8,6 +8,8 @@ echo createHeader();
     <div>
         <h2>Blocks</h2>
         <a class="btn btn-info" href="create.php" role="button">New+</a>
+        <a class="btn btn-info" href="pocasi.php" role="button">🌤Počasí🌤</a>
+
     </div>
     <table class="table table-striped">
         <thead>
