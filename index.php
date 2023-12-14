@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+//dark mode
 include"./compheader.php";
 echo createHeader();
 ?>
