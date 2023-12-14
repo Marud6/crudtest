@@ -36,9 +36,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
     }
     $ipaddress = getenv("REMOTE_ADDR") ;
-
-    $sql="INSERT INTO bloks (name, content,autor)". 
-        "VALUES ('$name','$content','$ipaddress')";
+    $time=$_SERVER['REQUEST_TIME'] ;
+    $sql="INSERT INTO bloks (name, content,autor,time)". 
+        "VALUES ('$name','$content','$ipaddress','$time')";
 
        
        
@@ -69,7 +69,7 @@ echo createHeader();
 ?>
 <body>
     <div>
-        <h1>New blok</h1>
+        <h1>New blo</h1>
         <form method="post">
         <div class="input-group mb-3">
   <input type="text" class="form-control" name="name" value="<?php echo $name;?>" placeholder=" Name">
