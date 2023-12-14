@@ -56,6 +56,8 @@ echo createHeader();
     $content=$row["content"];
     $create=$row["created_at"];
     $autor=$row["autor"];
+    $timer=$row["time"];
+
   
 
     
@@ -82,7 +84,9 @@ echo createHeader();
   <blockquote class="blockquote">
     <p><?php echo($content)?></p>
     <footer class="blockquote-footer"><?php echo($create)?></footer>
+    <p><?php echo($time)?></p>
   </blockquote>
+
 </div>
 <a class="btn btn-danger" href="index.php">Cancel</a>
     
