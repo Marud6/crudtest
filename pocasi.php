@@ -10,8 +10,9 @@ echo createHeader();
     padding: 50px;
     font-family: 'Lexend Deca', sans-serif; 
     text-align: center;
+    font-size:100px;
 
 
-">KOUKNI SE Z OKNAaaaaa</h1>
+">KOUKNI SE Z OKNA</h1>
 </body>
 </html>
