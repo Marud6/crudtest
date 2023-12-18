@@ -10,7 +10,13 @@ $weather=json_decode(file_get_contents($url), true);
 include"./compheader.php";
 echo createHeader();
 echo"<pre>";
-print_r($weather);
+//print_r($weather);
+
+
+
+
+$temperature=$weather["main"]["temp"];
+echo"$temperature";
 
 ?>
 <body>
