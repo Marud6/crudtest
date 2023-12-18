@@ -14,7 +14,7 @@ echo"<pre>";
 
 
 
-$temperature=$weather["main"]["temp"];
+$temperature=$weather["main"]["temp"]-273.15;
 echo"$temperature";
 
 ?>
