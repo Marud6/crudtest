@@ -2,7 +2,7 @@
 <?php
 $city="pardubice";
 $key=$_SESSION['api_key'];
-$url="http://api.openweathermap.org/data/2.5/weather?q='$city'&appid='$key'";
+$url="http://api.openweathermap.org/data/2.5/weather?q='$city'&appid='.$key.'";
 
 $weather=json_decode(file_get_contents($url), true);
 
