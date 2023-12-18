@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <?php
+$city="pardubice";
+$key=$_SESSION['api_key'];
+$url="https://api.openweathermap.org/data/2.5/weather?q='$city'&appid='.$key.'";
+
+$weather=json_decode(file_get_contents($url), true);
+
 include"./compheader.php";
 echo createHeader();
+echo"<pre>";
 ?>
 <body>
     <h1 style="
