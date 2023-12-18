@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php
+include("config.php");
+
 $city="pardubice";
 $key=$_SESSION['api_key'];
 $url="http://api.openweathermap.org/data/2.5/weather?q='$city'&appid='.$key.'";
