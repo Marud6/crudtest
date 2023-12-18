@@ -4,8 +4,8 @@ include("config.php");
 
 $city="pardubice";
 $key=$_SESSION['api_key'];
-$url="http://api.openweathermap.org/data/2.5/weather?q='$city'&appid='.$key.'";
-
+//$url="http://api.openweathermap.org/data/2.5/weather?q='$city'&appid='.$key.'";
+$url="https://api.openweathermap.org/data/2.5/weather?q=pardubice&appid=1f60fbb1bd7ffac98f7968dc3e01a65d";
 $weather=json_decode(file_get_contents($url), true);
 
 include"./compheader.php";
