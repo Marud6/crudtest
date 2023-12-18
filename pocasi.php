@@ -15,7 +15,7 @@ echo"<pre>";
 
 
 $temperature=$weather["main"]["temp"]-273.15;
-echo"$temperature";
+echo round($temperature);
 
 ?>
 <body>
