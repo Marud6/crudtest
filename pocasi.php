@@ -35,10 +35,19 @@ echo createHeader();
 
 ?>
 <script>
-function locati(){
+
+
+
+let btn = document.getElementById("btn")
+
+btn.addEventListener("click", geLtocation)
+
+
+
+
     const x = document.getElementById("id");
 
-function getLocation() {
+function geLtocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
@@ -54,7 +63,7 @@ function showPosition(position) {
 
 
 
-}
+
 
 </script>
 
@@ -68,7 +77,7 @@ function showPosition(position) {
 <button class="btn btn-success" type="submit" >Submit</button>
 
 </form>
-<button class="btn btn-success"  onclick="<script>locati()</script>">Show current location weather</button>
+<button class="btn btn-success"  id="btn">Show current location weather</button>
 
 
 </body>
