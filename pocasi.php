@@ -6,7 +6,7 @@ $city;
 $key=$_SESSION['api_key'];
 
 include"./compheader.php";
-echo createHeader();
+
 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -27,8 +27,15 @@ echo round($temperature);
 
 
 
+?>
+<!DOCTYPE html>
+<?php
+echo createHeader();
+
 
 ?>
+
+
 <body>
 
 
