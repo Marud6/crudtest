@@ -11,7 +11,14 @@ include"./compheader.php";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 echo"worked";
-    $city=htmlspecialchars($_POST["cityy"]);
+$user_ip = getenv('REMOTE_ADDR');
+$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
+$country = $geo["geoplugin_countryName"];
+$city = $geo["geoplugin_city"];
+
+
+    if($_POST["cityy"]!=null) {
+        $city=htmlspecialchars($_POST["cityy"]);}
     $url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
     $weather=json_decode(file_get_contents($url), true);
     echo"<pre>";
@@ -20,11 +27,8 @@ echo"worked";
 echo round($temperature);
 
 
-$user_ip = getenv('REMOTE_ADDR');
-$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
-$country = $geo["geoplugin_countryName"];
-$cityy = $geo["geoplugin_city"];
-echo $cityy  ;
+
+
 
 }
 
