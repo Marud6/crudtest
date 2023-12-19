@@ -2,33 +2,40 @@
 <?php
 include("config.php");
 
-$city="pardubice";
+
 $key=$_SESSION['api_key'];
-$url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
-$weather=json_decode(file_get_contents($url), true);
+
 include"./compheader.php";
 echo createHeader();
-echo"<pre>";
-//print_r($weather);
 
 
+if($_SERVER["REQUEST_METHOD"]=="POST"){
 
-
-$temperature=$weather["main"]["temp"]-273.15;
+    $city=htmlspecialchars($_POST["city"]);
+    $url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
+    $weather=json_decode(file_get_contents($url), true);
+    echo"<pre>";
+    print_r($weather);
+    $temperature=$weather["main"]["temp"]-273.15;//kelviny na C
 echo round($temperature);
+
+}
+
+
+
+
+
+
+
 
 ?>
 <body>
-    <h1 style="
-    margin: auto;
-    width: 640px; 
-    padding: 50px;
-    font-family: 'Lexend Deca', sans-serif; 
-    text-align: center;
-    font-size:100px;
 
 
-">KOUKNI SE Z OKNA</h1>
+
+<input type="text" class="form-control" name="city" value="<?php echo $city;?>" placeholder=" city">
+<button class="btn btn-success" type="submit" >Submit</button>
+
 <a class="btn btn-danger" href="index.php">Cancel</a>
 
 </body>
