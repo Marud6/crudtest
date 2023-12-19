@@ -10,7 +10,7 @@ echo createHeader();
 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-
+echo"worked";
     $city=htmlspecialchars($_POST["city"]);
     $url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
     $weather=json_decode(file_get_contents($url), true);
