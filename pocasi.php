@@ -70,6 +70,12 @@ function geLtocation() {
 }
 
 function showPosition(position) {
+<?php
+echo("worked")    
+?>
+
+
+
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
