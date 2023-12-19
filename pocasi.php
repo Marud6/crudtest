@@ -48,3 +48,21 @@ echo createHeader();
 
 </body>
 </html>
+
+
+
+
+<body>
+    <div>
+        <form method="post">
+        <div class="input-group mb-3">
+  <input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" cityy">
+</div>
+            <a class="btn btn-danger" href="index.php">cancel</a>
+            <button class="btn btn-success" type="submit" >Submit</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>

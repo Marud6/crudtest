@@ -90,6 +90,3 @@ echo createHeader();
     
 </body>
 </html>
-<?php
- 
-?>
