@@ -21,10 +21,10 @@ $city = $geo["geoplugin_city"];
         $city=htmlspecialchars($_POST["cityy"]);}
     $url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
     $weather=json_decode(file_get_contents($url), true);
-    echo"<pre>";
+   // echo"<pre>";
     //print_r($weather);
     $temperature=$weather["main"]["temp"]-273.15;//kelviny na C
-echo round($temperature);
+//echo round($temperature);
 
 
 
@@ -54,7 +54,7 @@ echo createHeader();
 
 
 
-<h1>temperature in <?php echo $city?> is <?php echo $temperature?> </h1>
+<h1>temperature in <?php echo $city?> is <?php echo round($temperature)?>°C </h1>
 <input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" city">
 
 
