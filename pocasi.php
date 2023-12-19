@@ -19,6 +19,13 @@ echo"worked";
     $temperature=$weather["main"]["temp"]-273.15;//kelviny na C
 echo round($temperature);
 
+
+$user_ip = getenv('REMOTE_ADDR');
+$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
+$country = $geo["geoplugin_countryName"];
+$cityy = $geo["geoplugin_city"];
+echo $city  ;
+
 }
 
 
@@ -48,42 +55,7 @@ echo createHeader();
 </form>
 <button class="btn btn-success"  id="btn">Show current location weather</button>
 
-<script>
 
-
-
-let btn = document.getElementById("btn")
-
-btn.addEventListener("click", geLtocation)
-
-
-
-
-    const x = document.getElementById("id");
-
-function geLtocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "No geolocation :(";
-  }
-}
-
-function showPosition(position) {
-
-
-
-
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-
-
-
-
-
-</script>
 </body>
 </html>
 
