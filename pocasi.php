@@ -32,8 +32,9 @@ echo round($temperature);
 <body>
 
 
-
+<form method="post">
 <input type="text" class="form-control" name="city" value="<?php echo $city;?>" placeholder=" city">
+</form>
 <button class="btn btn-success" type="submit" >Submit</button>
 
 <a class="btn btn-danger" href="index.php">Cancel</a>
