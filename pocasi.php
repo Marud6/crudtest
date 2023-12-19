@@ -19,6 +19,11 @@ $city = $geo["geoplugin_city"];
     if($_POST["cityy"]!=null) {
         $city=htmlspecialchars($_POST["cityy"]);}
     $url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
+
+
+
+
+
     $weather=json_decode(file_get_contents($url), true);
    // echo"<pre>";  
     //print_r($weather);
