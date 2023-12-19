@@ -70,9 +70,7 @@ function geLtocation() {
 }
 
 function showPosition(position) {
-<?php
-echo("worked")    
-?>
+
 
 
 
