@@ -66,7 +66,7 @@ function showPosition(position) {
 
 <a class="btn btn-danger" href="index.php">Cancel</a>
 <button class="btn btn-success" type="submit" >Submit</button>
-<button class="btn btn-success" type="submit" onclick="<script>locati()</script>">Show current location weather</button>
+<button class="btn btn-success"  onclick="<script>locati()</script>">Show current location weather</button>
 
 </form>
 
