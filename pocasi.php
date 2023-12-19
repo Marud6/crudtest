@@ -41,10 +41,10 @@ echo createHeader();
 
 <form method="post">
 <input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" city">
-</form>
 
 <a class="btn btn-danger" href="index.php">Cancel</a>
 <button class="btn btn-success" type="submit" >Submit</button>
+</form>
 
 </body>
 </html>
