@@ -34,7 +34,29 @@ echo createHeader();
 
 
 ?>
+<script>
+function locati(){
+    const x = document.getElementById("id");
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "No geolocation :(";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+
+
+
+}
+
+</script>
 
 <body>
 
@@ -44,6 +66,8 @@ echo createHeader();
 
 <a class="btn btn-danger" href="index.php">Cancel</a>
 <button class="btn btn-success" type="submit" >Submit</button>
+<button class="btn btn-success" type="submit" onclick="<script>locati()</script>">Show current location weather</button>
+
 </form>
 
 </body>
@@ -52,17 +76,3 @@ echo createHeader();
 
 
 
-<body>
-    <div>
-        <form method="post">
-        <div class="input-group mb-3">
-  <input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" cityy">
-</div>
-            <a class="btn btn-danger" href="index.php">cancel</a>
-            <button class="btn btn-success" type="submit" >Submit</button>
-
-        </form>
-    </div>
-    
-</body>
-</html>
