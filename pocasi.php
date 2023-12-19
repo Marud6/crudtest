@@ -34,6 +34,20 @@ echo createHeader();
 
 
 ?>
+
+
+<body>
+
+
+<form method="post">
+<input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" city">
+
+<a class="btn btn-danger" href="index.php">Cancel</a>
+<button class="btn btn-success" type="submit" >Submit</button>
+
+</form>
+<button class="btn btn-success"  id="btn">Show current location weather</button>
+
 <script>
 
 
@@ -66,20 +80,6 @@ function showPosition(position) {
 
 
 </script>
-
-<body>
-
-
-<form method="post">
-<input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" city">
-
-<a class="btn btn-danger" href="index.php">Cancel</a>
-<button class="btn btn-success" type="submit" >Submit</button>
-
-</form>
-<button class="btn btn-success"  id="btn">Show current location weather</button>
-
-
 </body>
 </html>
 
