@@ -22,7 +22,7 @@ $city = $geo["geoplugin_city"];
     $url='http://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$key;
     $weather=json_decode(file_get_contents($url), true);
     echo"<pre>";
-    print_r($weather);
+    //print_r($weather);
     $temperature=$weather["main"]["temp"]-273.15;//kelviny na C
 echo round($temperature);
 
@@ -51,7 +51,13 @@ echo createHeader();
 
 
 <form method="post">
+
+
+
+<h1>temperature in <?php echo $city?> is <?php echo $temperature?> </h1>
 <input type="text" class="form-control" name="cityy" value="<?php echo $city;?>" placeholder=" city">
+
+
 
 <a class="btn btn-danger" href="index.php">Cancel</a>
 <button class="btn btn-success" type="submit" >Submit</button>
